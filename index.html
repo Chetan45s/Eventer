@@ -11,27 +11,25 @@
     </head>
     <body>
         <!-- Nav tabs -->
-        <header>
         <div class="container-fluid">
             <div class="cotainer mt-4">
-                <h1 class="display-4 text-center">
+                <h1 style="font-size:5vw;" class="display-4 text-center">
                     <i class="fa fa-calendar-o text-primary" aria-hidden="true"></i>Welcome to <span class="text-dark">Eventer</span>
                 </h1>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="true" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarColor02">
-                    <ul class="navbar-nav mr-auto">
-                    <button type="button" onclick="events()" class="btn btn-secondary mr-4"><i class="fas fa-calendar"></i> Events</button>
-                    <button type="button" onclick="document.getElementById('id01').style.display='block'" class="btn btn-secondary">Registration</button>
-                    <button type="button" onclick="myreg()" class="btn btn-secondary ml-4">Your Registration</button>
+                    <ul  class="navbar-nav mr-auto">
+                    <button type="button" onclick="events()" class="btn btn-secondary mx-4 my-2"><i class="fas fa-calendar"></i> Events</button>
+                    <button type="button" onclick="document.getElementById('id01').style.display='block'" class="btn btn-secondary mx-4 my-2">Registration</button>
+                    <button type="button" onclick="myreg()" class="btn btn-secondary mx-4 my-2">Your Registration</button>
                     </ul>
                 </div>
             </nav>
         </div>
-        </header>
 
         <div id="id01" class="modal">
     
@@ -39,7 +37,7 @@
 
                 <div class="container">
                     <br>
-                    <h1 class="text-center">Register for the event</h1>
+                    <h1 style="font-size:3vw;" class="text-center">Register for the event</h1>
                     <br>
 
                     <div class="form-group ma" style="float:left; width:310px">
@@ -75,7 +73,7 @@
                             <option value='3'>The Chainsmokers</option>
                             <option value='4'>Poetry</option>
                         </select>
-                        <small id="eventname"></small>
+                        <small id="eventname1"></small>
                     </div>
 
                     <input type="submit" value="Submit" class="btn btn-dark checkk">
@@ -88,7 +86,7 @@
 
 
         <div id="event">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide mt-4" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -97,32 +95,32 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img class="d-block" style="width:100%; height:800px" src="img/Image2.jpg" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
+                    <img class="d-block" style="width:100%; height:auto" src="img/Image2.jpg" alt="First slide">
+                    <div class="carousel-caption">
                         <h5>Maroon 5</h5>
                         <p>Live on Monday 10 PM</p>
                     </div>
                     </div>
                     <div class="carousel-item">
-                    <img class="d-block" style="width:100%; height:800px" src="img/Image1.jpg" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4>The Engineer</h4><hr>
+                    <img class="d-block" style="width:100%; height:auto" src="img/Image1.jpg" alt="Second slide">
+                    <div class="carousel-caption ">
+                        <h4>The Engineer</h4>
                         <h5>Stand Up</h5>
                         <p>Live on Tuesday 10 PM</p>
                     </div>                    
                     </div>
                     <div class="carousel-item">
-                    <img class="d-block" style="width:100%; height:800px" src="img/Image3.jpg" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4>The Chainsmokers</h4><hr>
+                    <img class="d-block" style="width:100%; height:auto" src="img/Image3.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h4>The Chainsmokers</h4>
                         <h5>Band</h5>
                         <p>Live on Wednesday 10 PM</p>
                     </div>                    
                     </div>
                     <div class="carousel-item">
-                    <img class="d-block" style="width:100%; height:800px" src="img/Image4.png" alt="Forth slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4>Poetry</h4><hr>
+                    <img class="d-block" style="width:100%; height:auto" src="img/Image4.png" alt="Forth slide">
+                    <div class="carousel-caption">
+                        <h4>Poetry</h4>
                         <p>Live on Saturday 9 PM</p>
                     </div>                    
                     </div>
@@ -155,7 +153,7 @@
                     </table>   
                 </div>
                 <div id="ini" class="imag">
-                    <img class="rounded mx-auto d-block" src="img/ini.svg">
+                    <img style="width:600px; height:auto" class="rounded mx-auto d-block" src="img/ini.svg">
                 </div>
             </div>
         </section>
@@ -171,3 +169,4 @@
         <script src="js/main.js"></script>
     </body>
 </html>
+
