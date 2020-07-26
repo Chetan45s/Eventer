@@ -58,7 +58,7 @@ function validation(ev) {
   var strUser1 = e.options[e.selectedIndex].text;
   // console.log(strUser1);
   if (strUser === 0) {
-    document.getElementById("eventname1").innerHTML = " ** Please Select a Contest";
+    document.getElementById("eventname1").innerHTML = "Please Select a Event";
     // alert("Please select a Contest");
     return false;
   }
@@ -68,7 +68,7 @@ function validation(ev) {
 
   if (fname === "") {
     document.getElementById("fname1").innerHTML =
-      " ** Please fill the username field";
+      "Please fill the Frist Name";
     setTimeout(() => {
       document.getElementById("fname1").innerHTML = " ";
     }, 2000);
@@ -76,7 +76,7 @@ function validation(ev) {
   }
   if (fname.length <= 2 || fname.length > 20) {
     document.getElementById("fname1").innerHTML =
-      " ** Name length must be between 2 and 20";
+      "Please enter a valid name";
     setTimeout(() => {
       document.getElementById("fname1").innerHTML = " ";
     }, 2000);
@@ -93,7 +93,7 @@ function validation(ev) {
 
   if (lname === "") {
     document.getElementById("lname1").innerHTML =
-      " Please fill the username field";
+      "Please fill the Last Name";
     setTimeout(() => {
       document.getElementById("lname1").innerHTML = " ";
     }, 2000);
@@ -101,7 +101,7 @@ function validation(ev) {
   }
   if (fname.length <= 2 || fname.length > 20) {
     document.getElementById("lname1").innerHTML =
-      "Name length must be between 2 and 20";
+      "Please enter a valid name";
     setTimeout(() => {
       document.getElementById("lname1").innerHTML = " ";
     }, 2000);
@@ -119,7 +119,7 @@ function validation(ev) {
 
   if (phno === "") {
     document.getElementById("phno1").innerHTML =
-      "Please fill the mobile NUmber field";
+      "Please fill the mobile Number field";
     setTimeout(() => {
       document.getElementById("phno1").innerHTML = " ";
     }, 2000);
@@ -128,7 +128,7 @@ function validation(ev) {
   }
   if (isNaN(phno)) {
     document.getElementById("phno1").innerHTML =
-      "user must write digits only not characters";
+      "User must write digits only not characters";
     setTimeout(() => {
       document.getElementById("phno1").innerHTML = " ";
     }, 2000);
@@ -147,7 +147,7 @@ function validation(ev) {
 
   if (email === "") {
     document.getElementById("email1").innerHTML =
-      "Please fill the email idx` field";
+      "Please fill the email field";
     setTimeout(() => {
       document.getElementById("email1").innerHTML = " ";
     }, 2000);
