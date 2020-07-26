@@ -1,13 +1,9 @@
 
-body {font-family: Arial, Helvetica, sans-serif;height: 95vh;}
+body {font-family: Arial, Helvetica, sans-serif;}
 
-header{
-    height: 25vh;
-}
 
 footer{
   background-color: black;
-  height: 10vh;
   text-align: center;
   padding: 5px;
 }
@@ -17,15 +13,6 @@ footer .container-fluid p,a{
    padding-left: 20px;
    padding-right: 20px;
 }
-
-#event{
-    height: 55vh;
-}
-
-#myregistration{
-  height: 70vh;
-}
-
 
 .cancelbtn {
   width: auto;
@@ -40,7 +27,7 @@ footer .container-fluid p,a{
   padding: 16px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
-	width: 1000px;
+	width: 800px;
 	max-width: 100%;
 }
 
@@ -130,8 +117,10 @@ footer .container-fluid p,a{
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
   padding-top: 60px;
+  padding-left: 380px;
+  padding-right: 380px;
 }
 
 /* Modal Content/Box */
@@ -139,7 +128,18 @@ footer .container-fluid p,a{
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  min-height:auto;
+  width: 50%;
+}
+
+@media only screen and (min-width:300px){
+  .modal-content{
+    width: auto;
+  }
+  .modal{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 /* The Close Button (x) */
@@ -183,5 +183,7 @@ footer .container-fluid p,a{
 
 .carousel-caption h5,h4{
   font-size: 30px;
+  font-size:2vw;
+  text-shadow: black;
   color: white;
 }
